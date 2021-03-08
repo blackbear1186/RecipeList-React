@@ -1,31 +1,37 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <nav>
+    <div className="navbar">
       <h2>Delicious Recipes</h2>
-      <ul>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/chicken'>Chicken</Link>
-        </li>
-        <li>
-          <Link to='/beef'>Beef</Link>
-        </li>
-        <li>
-          <Link to='/lamb'>Lamb</Link>
-        </li>
-        <li>
-          <Link to='/seafood'>Seafood</Link>
-        </li>
-        <li>
-          <Link to='/desserts'>Dessert</Link>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul className="links">
+          <li>
+            <NavLink to="/" className="link-home">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <Link to="/chicken" className="link-chicken">
+              Chicken
+            </Link>
+          </li>
+          <li>
+            <Link to="/beef" className='link-beef'>Beef</Link>
+          </li>
+          <li>
+            <Link to="/lamb" className='link-lamb'>Lamb</Link>
+          </li>
+          <li>
+            <Link to="/seafood" className='link-seafood'>Seafood</Link>
+          </li>
+          <li>
+            <Link to="/desserts" className='link-dessert'>Dessert</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 

@@ -1,4 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(123, 189, 219);
+  height: 50px;
+  align-items: center;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  margin: 1em;
+  list-style-type: none;
+  text-decoration: none;
+}
+.link-home, .link-dessert, .link-chicken, .link-beef, .link-seafood, .link-lamb {
+  text-decoration: none;
+  color: black;
 }
