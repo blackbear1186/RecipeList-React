@@ -3,23 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
 .navbar {
-  display: flex;
-  justify-content: space-around;
+  margin: auto;
   background-color: rgb(123, 189, 219);
   height: 50px;
-  align-items: center;
 }
-ul {
-  display: flex;
-  list-style-type: none;
+.search-input {
+  width: 30em;
+  padding: .5em;
+  
 }
-li {
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
   margin: 1em;
-  list-style-type: none;
-  text-decoration: none;
 }
-.link-home, .link-dessert, .link-chicken, .link-beef, .link-seafood, .link-lamb {
-  text-decoration: none;
-  color: black;
+.search {
+  margin-top: 1em;
 }
+
