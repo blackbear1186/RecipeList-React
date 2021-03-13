@@ -6,7 +6,8 @@
 .container {
   width: 1000px;
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
+  justify-content: center;
 }
 .navbar {
   margin: auto;
@@ -21,9 +22,13 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
 }
 .card {
   margin: 1em;
+}
+img {
+  border-radius:10px;
 }
 .search {
   margin-top: 1em;
